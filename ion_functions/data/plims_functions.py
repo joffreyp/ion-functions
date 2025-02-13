@@ -21,7 +21,7 @@ import numpy as np
 def plims_flow_rate(run_fast, run_fast_factor, sample_speed, sample_volume):
     run_fast = np.atleast_1d(run_fast).astype(bool)
     run_fast_factor = np.atleast_1d(run_fast_factor)
-    sample_speed = np.atleast_1d(sample_speed).astype('timedelta64[m]')
+    sample_speed = np.atleast_1d(sample_speed).astype('timedelta64[m]').astype(float) # convert to minutes
     sample_volume = np.atleast_1d(sample_volume)
     output = np.zeros(run_fast.shape)
     output[run_fast] = sample_volume[run_fast] / (sample_speed[run_fast] / run_fast_factor[run_fast])
