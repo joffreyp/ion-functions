@@ -590,7 +590,7 @@ def vadcp_b_bin_depths(depth, cell_positions, orientation):
         orientation = orientation of instrument. "-1" being upwards facing, "1" being downwards facing
     """
 
-    if not orientation or orientation not in [-1, 1]:
+    if not orientation.all() or orientation.all() not in [-1, 1]:
         return []
     return [depth + orientation*position for position in cell_positions]
 
