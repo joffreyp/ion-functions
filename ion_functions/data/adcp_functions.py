@@ -555,9 +555,9 @@ def depth_from_dbar(pressure, ctd_pressure, deployment_depth, latitude):
         latitude = deployment latitude
     """
 
-    if pressure > 0:
+    if pressure.all() > 0:
         depth = -z_from_p(pressure, latitude)
-    elif ctd_pressure > 0:
+    elif ctd_pressure.all() > 0:
         depth = -z_from_p(ctd_pressure, latitude)
     else:
         depth = deployment_depth
