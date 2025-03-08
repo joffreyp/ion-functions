@@ -592,7 +592,12 @@ def vadcp_b_bin_depths(depth, cell_positions, orientation):
 
     if not orientation.all() or orientation.all() not in [-1, 1]:
         return []
-    return [depth + orientation*position for position in cell_positions]
+
+    bin_depths = []
+    for i, bin in enumerate(cell_positions):
+        result = depth[i] + orientation[i]*bin
+        bin_depths.append(result)
+    return np.array(bin_depths)
 
 
 def vadcp_b_beam_eastward(b1, b2, b3, b4, pg1, pg2, pg3, pg4, h, p, r, lat, lon, dt, tm):
