@@ -1,3 +1,7 @@
+# Release 2.5.2 2025-02-25
+
+Issue #15787 - Adds support for VADCP-B functions
+
 # Release 2.5.1 2025-02-25
 
 Issue #15165 - Use new botpt predicted tide tables
