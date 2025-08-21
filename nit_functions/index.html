@@ -1,0 +1,1369 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../msp_functions/">
+      
+      
+        <link rel="next" href="../obs_functions/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Disolved Nitrate Functions - Ocean Observatories Initiative Ion Functions</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dissolved-nitrate-concentration-functions-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Ocean Observatories Initiative Ion Functions" class="md-header__button md-logo" aria-label="Ocean Observatories Initiative Ion Functions" data-md-component="logo">
+      
+  <img src="../assets/NSF-OOI-RGB.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ocean Observatories Initiative Ion Functions
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Disolved Nitrate Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/joffreyp/ion-functions/tree/feature/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ion-functions
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Ocean Observatories Initiative Ion Functions" class="md-nav__button md-logo" aria-label="Ocean Observatories Initiative Ion Functions" data-md-component="logo">
+      
+  <img src="../assets/NSF-OOI-RGB.png" alt="logo">
+
+    </a>
+    Ocean Observatories Initiative Ion Functions
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/joffreyp/ion-functions/tree/feature/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ion-functions
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ion Functions Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adcp_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADCP Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ctd_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CTD Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../co2_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CO2 Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../do2_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DOSTA Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flo_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fluorometer Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hyd_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hydrophone Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Optical Backscatter Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../met_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Met Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../msp_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Disolved Gas Concentration Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Disolved Nitrate Functions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Disolved Nitrate Functions
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ion_functions.data.nit_functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      nit_functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ion_functions.data.nit_functions--overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ion_functions.data.nit_functions.ts_corrected_nitrate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ts_corrected_nitrate
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../obs_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Optical Backscatter Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../opt_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OPTAA Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ph_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    pH Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prs_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seafloor Pressure Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sfl_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seafloor Hydrothermal Vent Chemistry Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vel_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Velocity Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wav_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Surface Wave Spectra Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Utility Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qc-tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QC/Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="dissolved-nitrate-concentration-functions-reference">Dissolved Nitrate Concentration Functions Reference</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="ion_functions.data.nit_functions"></a>
+    <div class="doc doc-contents first">
+
+        <h2 id="ion_functions.data.nit_functions--overview">Overview</h2>
+<p>Module containing NIT related data-calculations.
+This module implements the algorithm for calculating the
+Dissolved Nitrate Concentration, Temperature and Salinity Corrected (NITRTSC)
+from the OOI L0 NITROPT data product.</p>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="ion_functions.data.nit_functions.ts_corrected_nitrate" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">ts_corrected_nitrate</span><span class="p">(</span><span class="n">cal_temp</span><span class="p">,</span> <span class="n">wl</span><span class="p">,</span> <span class="n">eno3</span><span class="p">,</span> <span class="n">eswa</span><span class="p">,</span> <span class="n">di</span><span class="p">,</span> <span class="n">dark_value</span><span class="p">,</span> <span class="n">ctd_t</span><span class="p">,</span> <span class="n">ctd_sp</span><span class="p">,</span> <span class="n">data_in</span><span class="p">,</span> <span class="n">frame_type</span><span class="p">,</span> <span class="n">wllower</span><span class="o">=</span><span class="mi">217</span><span class="p">,</span> <span class="n">wlupper</span><span class="o">=</span><span class="mi">240</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Description:</p>
+<pre><code>This Python code is based on Matlab code
+(NUTNR_Example_MATLAB_Code_20140521_ver_1_00.m) that was
+developed by O.E. Kawka (UW/RSN).
+
+The code below calculates the Dissolved Nitrate Concentration
+with the Sakamoto et. al. (2009) algorithm that uses the observed
+sample salinity and temperature to subtract the bromide component
+of the overall seawater UV absorption spectrum before solving for
+the nitrate concentration.
+
+The output represents the OOI L2 Dissolved Nitrate Concentration,
+Temperature and Salinity Corrected (NITRTSC).
+</code></pre>
+<p>Implemented by:</p>
+<pre><code>2014-05-22: Craig Risien. Initial Code
+2014-05-27: Craig Risien. This function now looks for the light vs
+            dark frame measurements and only calculates nitrate
+            concentration based on the light frame measurements.
+2015-04-09: Russell Desiderio. CI is now implementing cal coeffs
+            by tiling in time, requiring coding changes. The
+            tiling includes the wllower and wlupper variables
+            when supplied by CI.
+</code></pre>
+<p>Usage:</p>
+<pre><code>NO3_conc = ts_corrected_nitrate(cal_temp, wl, eno3, eswa, di,
+                                dark_value, ctd_t, ctd_sp, data_in,
+                                frame_type, wllower, wlupper)
+
+    where
+
+cal_temp = Calibration water temperature value
+wl = (256,) array of wavelength bins
+eno3 = (256,) array of wavelength-dependent nitrate
+        extinction coefficients
+eswa = (256,) array of seawater extinction coefficients
+di = (256,) array of deionized water reference spectrum
+dark_value = (N,) array of dark average scalar value
+ctd_t = (N,) array of water temperature values from
+        colocated CTD [deg C].
+        (see 1341-00010_Data_Product_Spec_TEMPWAT)
+ctd_sp = (N,) array of practical salinity values from
+        colocated CTD [unitless].
+        (see 1341-00040_Data_Product_Spec_PRACSAL)
+data_in = (N x 256) array of nitrate measurement values
+        from the UV absorption spectrum data product
+        (L0 NITROPT) [unitless]
+NO3_conc = L2 Dissolved Nitrate Concentration, Temperature and
+        Corrected (NITRTSC) [uM]
+frame_type = (N,) array of Frame type, either a light or dark
+        measurement. This function only uses the data from light
+        frame measurements.
+wllower = Lower wavelength limit for spectra fit.
+          From DPS: 217 nm (1-cm pathlength probe tip) or
+                    220 nm (4-cm pathlength probe tip)
+wlupper = Upper wavelength limit for spectra fit.
+          From DPS: 240 nm (1-cm pathlength probe tip) or
+                    245 nm (4-cm pathlength probe tip)
+</code></pre>
+<p>Notes:</p>
+<pre><code>2015-04-10: R. Desiderio.
+    CI has determined that cal coefficients will implemented as time-vectorized
+    arguments as inputs to DPAs. This means that all input calibration coefficients
+    originally dimensioned as (256,) will now be dimensioned as (N,256), where N is
+    the number of data packets.
+
+    This change broke the code ("Blocker Bug #2942") and so necessitated a revision
+    of this DPA and its unit test. The useindex construct along with variables WL,
+    ENO3, ESWA, and DI were originally set up outside the loop. However, with this CI
+    change, it is now possible that the cal coefficients could change inside of the
+    cal coeff variable arrays (reflecting data coming from two different instruments).
+    I took the conservative approach and moved these calculations inside the loop to
+    be calculated for each data packet.
+
+    Fill values on output have been changed to np.nan.
+</code></pre>
+<p>References:</p>
+<pre><code>OOI (2014). Data Product Specification for NUTNR Data Products.
+    Document Control Number 1341-00620.
+    https://alfresco.oceanobservatories.org/ (See: Company Home &gt;&gt;
+    OOI &gt;&gt; Controlled &gt;&gt; 1000 System Level &gt;&gt;
+    1341-00620_Data_Product_Spec_NUTNR_OOI.pdf)
+Johnson, K. S., and L. J. Coletti. 2002. In situ ultraviolet
+    spectrophotometry for high resolution and long-term monitoring
+    of nitrate, bromide and bisulfide in the ocean. Deep-Sea Res.
+    I 49:1291-1305
+Sakamoto, C.M., K.S. Johnson, and L.J. Coletti (2009). Improved
+    algorithm for the computation of nitrate concentrations in
+    seawater using an in situ ultraviolet spectrophotometer.
+    Limnology and Oceanography: Methods 7: 132-143
+</code></pre>
+
+            <details class="quote">
+              <summary>Source code in <code>ion_functions/data/nit_functions.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 18</span>
+<span class="normal"> 19</span>
+<span class="normal"> 20</span>
+<span class="normal"> 21</span>
+<span class="normal"> 22</span>
+<span class="normal"> 23</span>
+<span class="normal"> 24</span>
+<span class="normal"> 25</span>
+<span class="normal"> 26</span>
+<span class="normal"> 27</span>
+<span class="normal"> 28</span>
+<span class="normal"> 29</span>
+<span class="normal"> 30</span>
+<span class="normal"> 31</span>
+<span class="normal"> 32</span>
+<span class="normal"> 33</span>
+<span class="normal"> 34</span>
+<span class="normal"> 35</span>
+<span class="normal"> 36</span>
+<span class="normal"> 37</span>
+<span class="normal"> 38</span>
+<span class="normal"> 39</span>
+<span class="normal"> 40</span>
+<span class="normal"> 41</span>
+<span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
+<span class="normal"> 48</span>
+<span class="normal"> 49</span>
+<span class="normal"> 50</span>
+<span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
+<span class="normal"> 54</span>
+<span class="normal"> 55</span>
+<span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">ts_corrected_nitrate</span><span class="p">(</span><span class="n">cal_temp</span><span class="p">,</span> <span class="n">wl</span><span class="p">,</span> <span class="n">eno3</span><span class="p">,</span> <span class="n">eswa</span><span class="p">,</span> <span class="n">di</span><span class="p">,</span> <span class="n">dark_value</span><span class="p">,</span> <span class="n">ctd_t</span><span class="p">,</span>
+                         <span class="n">ctd_sp</span><span class="p">,</span> <span class="n">data_in</span><span class="p">,</span> <span class="n">frame_type</span><span class="p">,</span> <span class="n">wllower</span><span class="o">=</span><span class="mi">217</span><span class="p">,</span> <span class="n">wlupper</span><span class="o">=</span><span class="mi">240</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Description:</span>
+
+<span class="sd">        This Python code is based on Matlab code</span>
+<span class="sd">        (NUTNR_Example_MATLAB_Code_20140521_ver_1_00.m) that was</span>
+<span class="sd">        developed by O.E. Kawka (UW/RSN).</span>
+
+<span class="sd">        The code below calculates the Dissolved Nitrate Concentration</span>
+<span class="sd">        with the Sakamoto et. al. (2009) algorithm that uses the observed</span>
+<span class="sd">        sample salinity and temperature to subtract the bromide component</span>
+<span class="sd">        of the overall seawater UV absorption spectrum before solving for</span>
+<span class="sd">        the nitrate concentration.</span>
+
+<span class="sd">        The output represents the OOI L2 Dissolved Nitrate Concentration,</span>
+<span class="sd">        Temperature and Salinity Corrected (NITRTSC).</span>
+
+<span class="sd">    Implemented by:</span>
+
+<span class="sd">        2014-05-22: Craig Risien. Initial Code</span>
+<span class="sd">        2014-05-27: Craig Risien. This function now looks for the light vs</span>
+<span class="sd">                    dark frame measurements and only calculates nitrate</span>
+<span class="sd">                    concentration based on the light frame measurements.</span>
+<span class="sd">        2015-04-09: Russell Desiderio. CI is now implementing cal coeffs</span>
+<span class="sd">                    by tiling in time, requiring coding changes. The</span>
+<span class="sd">                    tiling includes the wllower and wlupper variables</span>
+<span class="sd">                    when supplied by CI.</span>
+
+<span class="sd">    Usage:</span>
+
+<span class="sd">        NO3_conc = ts_corrected_nitrate(cal_temp, wl, eno3, eswa, di,</span>
+<span class="sd">                                        dark_value, ctd_t, ctd_sp, data_in,</span>
+<span class="sd">                                        frame_type, wllower, wlupper)</span>
+
+<span class="sd">            where</span>
+
+<span class="sd">        cal_temp = Calibration water temperature value</span>
+<span class="sd">        wl = (256,) array of wavelength bins</span>
+<span class="sd">        eno3 = (256,) array of wavelength-dependent nitrate</span>
+<span class="sd">                extinction coefficients</span>
+<span class="sd">        eswa = (256,) array of seawater extinction coefficients</span>
+<span class="sd">        di = (256,) array of deionized water reference spectrum</span>
+<span class="sd">        dark_value = (N,) array of dark average scalar value</span>
+<span class="sd">        ctd_t = (N,) array of water temperature values from</span>
+<span class="sd">                colocated CTD [deg C].</span>
+<span class="sd">                (see 1341-00010_Data_Product_Spec_TEMPWAT)</span>
+<span class="sd">        ctd_sp = (N,) array of practical salinity values from</span>
+<span class="sd">                colocated CTD [unitless].</span>
+<span class="sd">                (see 1341-00040_Data_Product_Spec_PRACSAL)</span>
+<span class="sd">        data_in = (N x 256) array of nitrate measurement values</span>
+<span class="sd">                from the UV absorption spectrum data product</span>
+<span class="sd">                (L0 NITROPT) [unitless]</span>
+<span class="sd">        NO3_conc = L2 Dissolved Nitrate Concentration, Temperature and</span>
+<span class="sd">                Corrected (NITRTSC) [uM]</span>
+<span class="sd">        frame_type = (N,) array of Frame type, either a light or dark</span>
+<span class="sd">                measurement. This function only uses the data from light</span>
+<span class="sd">                frame measurements.</span>
+<span class="sd">        wllower = Lower wavelength limit for spectra fit.</span>
+<span class="sd">                  From DPS: 217 nm (1-cm pathlength probe tip) or</span>
+<span class="sd">                            220 nm (4-cm pathlength probe tip)</span>
+<span class="sd">        wlupper = Upper wavelength limit for spectra fit.</span>
+<span class="sd">                  From DPS: 240 nm (1-cm pathlength probe tip) or</span>
+<span class="sd">                            245 nm (4-cm pathlength probe tip)</span>
+<span class="sd">    Notes:</span>
+
+<span class="sd">        2015-04-10: R. Desiderio.</span>
+<span class="sd">            CI has determined that cal coefficients will implemented as time-vectorized</span>
+<span class="sd">            arguments as inputs to DPAs. This means that all input calibration coefficients</span>
+<span class="sd">            originally dimensioned as (256,) will now be dimensioned as (N,256), where N is</span>
+<span class="sd">            the number of data packets.</span>
+
+<span class="sd">            This change broke the code (&quot;Blocker Bug #2942&quot;) and so necessitated a revision</span>
+<span class="sd">            of this DPA and its unit test. The useindex construct along with variables WL,</span>
+<span class="sd">            ENO3, ESWA, and DI were originally set up outside the loop. However, with this CI</span>
+<span class="sd">            change, it is now possible that the cal coefficients could change inside of the</span>
+<span class="sd">            cal coeff variable arrays (reflecting data coming from two different instruments).</span>
+<span class="sd">            I took the conservative approach and moved these calculations inside the loop to</span>
+<span class="sd">            be calculated for each data packet.</span>
+
+<span class="sd">            Fill values on output have been changed to np.nan.</span>
+
+<span class="sd">    References:</span>
+
+<span class="sd">        OOI (2014). Data Product Specification for NUTNR Data Products.</span>
+<span class="sd">            Document Control Number 1341-00620.</span>
+<span class="sd">            https://alfresco.oceanobservatories.org/ (See: Company Home &gt;&gt;</span>
+<span class="sd">            OOI &gt;&gt; Controlled &gt;&gt; 1000 System Level &gt;&gt;</span>
+<span class="sd">            1341-00620_Data_Product_Spec_NUTNR_OOI.pdf)</span>
+<span class="sd">        Johnson, K. S., and L. J. Coletti. 2002. In situ ultraviolet</span>
+<span class="sd">            spectrophotometry for high resolution and long-term monitoring</span>
+<span class="sd">            of nitrate, bromide and bisulfide in the ocean. Deep-Sea Res.</span>
+<span class="sd">            I 49:1291-1305</span>
+<span class="sd">        Sakamoto, C.M., K.S. Johnson, and L.J. Coletti (2009). Improved</span>
+<span class="sd">            algorithm for the computation of nitrate concentrations in</span>
+<span class="sd">            seawater using an in situ ultraviolet spectrophotometer.</span>
+<span class="sd">            Limnology and Oceanography: Methods 7: 132-143</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">n_data_packets</span> <span class="o">=</span> <span class="n">data_in</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="c1"># make sure that the dimensionalities of wllower and wlupper are consistent</span>
+    <span class="c1"># regardless of whether or not they are specified in the argument list.</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isscalar</span><span class="p">(</span><span class="n">wllower</span><span class="p">):</span>
+        <span class="n">wllower</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">wllower</span><span class="p">,</span> <span class="n">n_data_packets</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isscalar</span><span class="p">(</span><span class="n">wlupper</span><span class="p">):</span>
+        <span class="n">wlupper</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">wlupper</span><span class="p">,</span> <span class="n">n_data_packets</span><span class="p">)</span>
+
+    <span class="c1"># coefficients to equation 4 of Sakamoto et al 2009 that give the</span>
+    <span class="c1"># absorbance of seasalt at 35 salinity versus temperature</span>
+    <span class="n">Asak</span> <span class="o">=</span> <span class="mf">1.1500276</span>
+    <span class="n">Bsak</span> <span class="o">=</span> <span class="mf">0.02840</span>
+    <span class="n">Csak</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.3101349</span>
+    <span class="n">Dsak</span> <span class="o">=</span> <span class="mf">0.001222</span>
+
+    <span class="n">NO3_conc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">n_data_packets</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_data_packets</span><span class="p">):</span>
+
+        <span class="k">if</span> <span class="n">frame_type</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;SDB&#39;</span> <span class="ow">or</span> <span class="n">frame_type</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;SDF&#39;</span> <span class="ow">or</span> <span class="n">frame_type</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;NDF&quot;</span><span class="p">:</span>
+
+            <span class="c1">## Ignore and fill dark frame measurements</span>
+            <span class="c1">#NO3_conc[i] = -9999999.0</span>
+
+            <span class="c1"># change this to output nans instead.</span>
+            <span class="n">NO3_conc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+        <span class="k">else</span><span class="p">:</span>
+
+            <span class="c1"># Find wavelength bins that fall between the upper and lower</span>
+            <span class="c1"># limits for spectra fit</span>
+            <span class="n">useindex</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">wllower</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">wl</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:],</span> <span class="n">wl</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:]</span> <span class="o">&lt;=</span> <span class="n">wlupper</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+            <span class="c1"># subset data so that we only use wavelengths between wllower &amp; wlupper</span>
+            <span class="n">WL</span> <span class="o">=</span> <span class="n">wl</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">useindex</span><span class="p">]</span>
+            <span class="n">ENO3</span> <span class="o">=</span> <span class="n">eno3</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">useindex</span><span class="p">]</span>
+            <span class="n">ESWA</span> <span class="o">=</span> <span class="n">eswa</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">useindex</span><span class="p">]</span>
+            <span class="n">DI</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">di</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">useindex</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+            <span class="n">SW</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data_in</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">useindex</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+
+            <span class="c1"># correct each SW intensity for dark current</span>
+            <span class="n">SWcorr</span> <span class="o">=</span> <span class="n">SW</span> <span class="o">-</span> <span class="n">dark_value</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+            <span class="c1"># calculate absorbance</span>
+            <span class="n">Absorbance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">DI</span> <span class="o">/</span> <span class="n">SWcorr</span><span class="p">)</span>
+
+            <span class="c1"># now estimate molar absorptivity of seasalt at in situ temperature</span>
+            <span class="c1"># use Satlantic calibration and correct as in Sakamoto et al. 2009.</span>
+            <span class="n">SWA_Ext_at_T</span> <span class="o">=</span> <span class="p">(</span><span class="n">ESWA</span> <span class="o">*</span> <span class="p">((</span><span class="n">Asak</span> <span class="o">+</span> <span class="n">Bsak</span> <span class="o">*</span> <span class="n">ctd_t</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">Asak</span> <span class="o">+</span> <span class="n">Bsak</span> <span class="o">*</span> <span class="n">cal_temp</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+                            <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">Dsak</span> <span class="o">*</span> <span class="p">(</span><span class="n">ctd_t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">cal_temp</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="n">WL</span> <span class="o">-</span> <span class="mf">210.0</span><span class="p">)))</span>
+
+            <span class="c1"># absorbance due to seasalt</span>
+            <span class="n">A_SWA</span> <span class="o">=</span> <span class="n">ctd_sp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">SWA_Ext_at_T</span>
+            <span class="c1"># subtract seasalt absorbance from measured absorbance</span>
+            <span class="n">Acomp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Absorbance</span> <span class="o">-</span> <span class="n">A_SWA</span><span class="p">,</span> <span class="n">ndmin</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+
+            <span class="c1"># ENO3 plus a linear baseline</span>
+            <span class="n">subset_array_size</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">ENO3</span><span class="p">)</span>
+            <span class="c1"># for the constant in the linear baseline</span>
+            <span class="n">Ones</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">subset_array_size</span><span class="p">[</span><span class="mi">0</span><span class="p">],),</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="mi">100</span>
+            <span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">ENO3</span><span class="p">,</span> <span class="n">Ones</span><span class="p">,</span> <span class="n">WL</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+
+            <span class="c1"># C has NO3, baseline constant, and slope (vs. WL)</span>
+            <span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">M</span><span class="p">),</span> <span class="n">Acomp</span><span class="p">)</span>
+
+            <span class="n">NO3_conc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">C</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">NO3_conc</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.path", "navigation.instant", "navigation.prune", "navigation.top", "toc.integrate", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
